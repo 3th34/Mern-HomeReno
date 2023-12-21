@@ -1,23 +1,27 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutMe from "./assets/AboutMe";
-import ContactMe from "./assets/ContactMe";
-import IndustryKnowHow from "./assets/IndustryKnowHow";
-import PastProjects from "./assets/PastProjects";
-import Thoughts from "./assets/Thoughts";
-import Signin from "./assets/Signin";
-import Signup from "./assets/Signup";
+import Home from "./pages/Home"
+import AboutMe from "./pages/AboutMe";
+import ContactMe from "./pages/ContactMe";
+import IndustryKnowHow from "./pages/IndustryKnowHow";
+import PastProjects from "./pages/PastProjects";
+import Thoughts from "./pages/Thoughts";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 
 export default function App() {
-  return <BrowserRouter>
+  return (
+  <BrowserRouter>
   <Routes>
-    <Routes path="/Home" element={<Home />} />
-    <Routes path="/AboutMe" element={<AboutMe />} />
-    <Routes path="/ContactMe" element={<ContactMe />} />
-    <Routes path="/IndustryKnowHow" element={<IndustryKnowHow/>} />
-    <Routes path="/PastProjects" element={<PastProjects/>} />
-    <Routes path="/Thoughts" element={<Thoughts/>} />
-    <Routes path="/Signin" element={<Signin/>} />
-    <Routes path="/Signup" element={<Signup />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/AboutMe" element={<AboutMe />} />
+    <Route path="/ContactMe" element={<ContactMe />} />
+    <Route path="/IndustryKnowHow" element={<IndustryKnowHow />} />
+    <Route path="/PastProjects" element={<PastProjects />} />
+    <Route path="/Thoughts" element={<Thoughts />} />
+    <Route path="/Signin" element={<Signin />} />
+    <Route path="/Signup" element={<Signup />} />
   </Routes>
   </BrowserRouter>
+  );
 }
+ 
