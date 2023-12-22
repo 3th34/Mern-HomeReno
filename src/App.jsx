@@ -7,10 +7,12 @@ import PastProjects from "./pages/PastProjects";
 import Thoughts from "./pages/Thoughts";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import Header from "./Components/Header";
 
 export default function App() {
   return (
   <BrowserRouter>
+  <Header />
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/AboutMe" element={<AboutMe />} />
