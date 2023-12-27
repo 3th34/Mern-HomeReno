@@ -14,16 +14,16 @@ export default function App() {
   <BrowserRouter>
   <Header />
   <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/AboutMe" element={<AboutMe />} />
-    <Route path="/ContactMe" element={<ContactMe />} />
-    <Route path="/IndustryKnowHow" element={<IndustryKnowHow />} />
-    <Route path="/PastProjects" element={<PastProjects />} />
-    <Route path="/Thoughts" element={<Thoughts />} />
-    <Route path="/Signin" element={<Signin />} />
-    <Route path="/Signup" element={<Signup />} />
+    <Route path='/' element={<Home />} />
+    <Route path='/AboutMe' element={<AboutMe />} />
+    <Route path='/ContactMe' element={<ContactMe />} />
+    <Route path='/IndustryKnowHow' element={<IndustryKnowHow />} />
+    <Route path='/PastProjects' element={<PastProjects />} />
+    <Route path='/Thoughts' element={<Thoughts />} />
+    <Route path='/Signin' element={<Signin />} />
+    <Route path='/Signup' element={<Signup />} />
   </Routes>
   </BrowserRouter>
-  );
+  )
 }
  
